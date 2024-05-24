@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.turkcell.crm</groupId>
 	<artifactId>core</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<name>core</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -78,7 +78,7 @@
 		<repository>
 			<id>github</id>
 			<name>Github Package Center</name>
-			<url>https://maven.pkg.github.com/berathazer/Turkcell-CRM</url>
+			<url>https://maven.pkg.github.com/berathazer/TurkcellCRMCore</url>
 		</repository>
 	</distributionManagement>
 
