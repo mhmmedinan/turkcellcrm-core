@@ -8,7 +8,7 @@
 		<version>3.2.5</version>
 		<relativePath/>
 	</parent>
-	<groupId>io.github.berathazer</groupId>
+	<groupId>io.github.mhmmedinan</groupId>
 	<artifactId>core</artifactId>
 
 	<version>1.0.0</version>
@@ -41,7 +41,7 @@
 
 	<packaging>jar</packaging>
 	<description>Common Project TurkcellCRM Microservices</description>
-	<url>https://github.com/berathazer/TurkcellCRMCore</url>
+	<url>https://github.com/muhammedinan/turkcellcrm-core</url>
 
 	<licenses>
 		<license>
@@ -115,17 +115,17 @@
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:git:git://github.com/berathazer/TurkcellCRMCore.git</connection>
-		<developerConnection>scm:git:ssh://github.com:berathazer/TurkcellCRMCore.git</developerConnection>
-		<url>http://github.com/berathazer/TurkcellCRMCore</url>
+		<connection>scm:git:git://github.com/muhammedinan/turkcellcrm-core.git</connection>
+		<developerConnection>scm:git:ssh://github.com:muhammedinan/turkcellcrm-core.git</developerConnection>
+		<url>http://github.com/muhammedinan/turkcellcrm-core</url>
 	</scm>
 
 	<developers>
 		<developer>
-			<name>Berat Hazer</name>
-			<email>berathazer371@gmail.com</email>
-			<organization>io.github.berathazer</organization>
-			<organizationUrl>http://github.com/berathazer/</organizationUrl>
+			<name>Muhammed İnan</name>
+			<email>minan.65hotmail.com</email>
+			<organization>io.github.mhmmedinan</organization>
+			<organizationUrl>http://github.com/muhammedinan/turkcellcrm-core/</organizationUrl>
 		</developer>
 	</developers>
 
