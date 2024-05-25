@@ -10,7 +10,9 @@
 	</parent>
 	<groupId>io.github.berathazer</groupId>
 	<artifactId>core</artifactId>
+
 	<version>1.0.0</version>
+
 	<name>core</name>
 
 	<build>
