@@ -8,40 +8,28 @@
 		<version>3.2.5</version>
 		<relativePath/>
 	</parent>
-	<groupId>io.github.mhmmedinan</groupId>
+	<groupId>io.github.minan65</groupId>
 	<artifactId>core</artifactId>
-
-	<version>1.0.0</version>
-
+	<version>1.0.1</version>
 	<name>core</name>
+	<packaging>jar</packaging>
 
+	<description>Common Project TurkcellCRM Microservices</description>
+	<url>https://github.com/minan65/turkcellcrm-core</url>
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.13</version>
+				<groupId>org.sonatype.central</groupId>
+				<artifactId>central-publishing-maven-plugin</artifactId>
+				<version>0.4.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+					<publishingServerId>central</publishingServerId>
+					<tokenAuth>true</tokenAuth>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
-	<packaging>jar</packaging>
-	<description>Common Project TurkcellCRM Microservices</description>
-	<url>https://github.com/muhammedinan/turkcellcrm-core</url>
 
 	<licenses>
 		<license>
@@ -87,7 +75,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>3.2.4</version>
+						<version>1.5</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
@@ -104,28 +92,25 @@
 	</profiles>
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:git:git://github.com/muhammedinan/turkcellcrm-core.git</connection>
-		<developerConnection>scm:git:ssh://github.com:muhammedinan/turkcellcrm-core.git</developerConnection>
-		<url>http://github.com/muhammedinan/turkcellcrm-core</url>
+		<connection>scm:git:git://github.com/minan65/turkcellcrm-core.git</connection>
+		<developerConnection>scm:git:ssh://github.com:minan65/turkcellcrm-core.git</developerConnection>
+		<url>http://github.com/minan65/turkcellcrm-core</url>
 	</scm>
 
 	<developers>
 		<developer>
 			<name>Muhammed İnan</name>
 			<email>minan.65hotmail.com</email>
-			<organization>io.github.mhmmedinan</organization>
-			<organizationUrl>http://github.com/muhammedinan/turkcellcrm-core/</organizationUrl>
+			<organization>io.github.minan65</organization>
+			<organizationUrl>http://github.com/minan65/turkcellcrm-core/</organizationUrl>
 		</developer>
 	</developers>
 
@@ -185,13 +170,6 @@
 			<artifactId>maven-javadoc-plugin</artifactId>
 			<version>3.6.3</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-gpg-plugin</artifactId>
-			<version>3.2.4</version>
-		</dependency>
-
 	</dependencies>
 
 </project>
